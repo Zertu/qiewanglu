@@ -1,4 +1,3 @@
  <input [(ngModel)]="poem" placeholder=""> 
- <div>
-     {{poem|html2markdown}}
+ <div  [innerHTML]= "poem|html2markdown">   
  </div>
