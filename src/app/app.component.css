@@ -2,6 +2,14 @@
     font-family: font;
     src: url('font.ttf')format('truetype');
 }
+@font-face{
+    font-family: fangzhengsongti;
+    src: url('方正清刻本悦宋简体.TTF')format('truetype');
+}
 *{
     font-family: font;
+    margin: 0;
+    padding: 0;
+    color: #9aa3a4
 }
+

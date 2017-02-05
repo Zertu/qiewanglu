@@ -1,0 +1,35 @@
+nav {
+    font-size: 22px;
+    line-height: 1.6;
+    ul {
+        display: flex;
+        flex-direction: row;
+        li {
+            width: 999px;
+            text-align: center;
+            list-style: none;
+            a {
+                position: relative;
+                text-decoration: none;
+                cursor: pointer;
+                font-size: 28px;
+                color: #9aa3a4;
+                &:before {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    bottom: -2px;
+                    height: 2px;
+                    width: 100%;
+                    background: #4fc08d;
+                    transform: scale(0);
+                    transition: all 0.3s;
+                }
+                &:hover:before {
+                    transform: scale(1);
+                    transition: all 0.3s;
+                }
+            }
+        }
+    }
+}
