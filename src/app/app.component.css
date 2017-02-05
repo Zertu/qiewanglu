@@ -2,6 +2,22 @@
     font-family: font;
     src: url('font.ttf')format('truetype');
 }
+@font-face{
+    font-family: fangzhengsongti;
+    src: url('font1.ttf')format('truetype');
+}
 *{
     font-family: font;
+    margin: 0;
+    padding: 0;
+    color: #9aa3a4
+}
+
+.sidebar{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    display: block;
+    width: 200px;
+
 }

@@ -1,0 +1,7 @@
+<div *ngFor="let poems of poemslist">
+  <img src="http://assets.awwwards.com/awards/images/2016/06/how-to-design-super-fast-website-big-image-.png" alt=""> 
+  <h3>{{poems.title}}</h3>
+  <article [innerHTML]="poems.poem|addnewline">
+  </article>
+  {{poems.author}} {{poems.updatetime}} {{poems.commits}} {{poems.viewnumber}}
+</div>
