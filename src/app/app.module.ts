@@ -6,6 +6,7 @@ import { LoginComponent } from './login/login.component'
 import { AppComponent } from './app.component';
 import { EditorComponent } from './editor/editor.component'
 
+import { basicModule } from './basicservice/basic.module'
 @NgModule({
   declarations: [
     AppComponent,
@@ -15,7 +16,8 @@ import { EditorComponent } from './editor/editor.component'
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    basicModule
   ],
   providers: [],
   bootstrap: [AppComponent]
