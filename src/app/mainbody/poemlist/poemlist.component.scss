@@ -11,7 +11,7 @@ div {
         margin: auto;
         display: block
     }
-    h3 {
+    h2 {
         margin: auto;
         display: inline-block;
     }
@@ -33,5 +33,9 @@ div {
             width: 100%;
             cursor:pointer;
         }
+    }
+    .stamp {
+        color: 	#7F7F7F;
+        font-size: 14px;
     }
 }
