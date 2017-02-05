@@ -5,14 +5,15 @@ import { HttpModule } from '@angular/http';
 import { LoginComponent } from './login/login.component'
 import { AppComponent } from './app.component';
 import { EditorComponent } from './editor/editor.component'
-
 import { basicModule } from './basicservice/basic.module'
+import { HeaderComponent } from './header/header.component';
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     EditorComponent,
-  ],
+    HeaderComponent
+],
   imports: [
     BrowserModule,
     FormsModule,

@@ -8,7 +8,7 @@ let markdown = require("markdown").markdown;
 export class html2markdown implements PipeTransform, SafeHtml {
   constructor(private domSanitizer:DomSanitizer){}
   transform(value: any, args?: any): SafeHtml {
-    return this.domSanitizer.bypassSecurityTrustHtml(markdown.toHTML(value))
+    return markdown.toHTML(value)
   }
 
 }

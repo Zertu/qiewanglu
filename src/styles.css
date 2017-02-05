@@ -1,5 +1,8 @@
 app-root{
     display: block;
-    width: 80%;
-    
+    width: 60%;
+    margin: auto
+}
+body{
+    background-color:#fafafa 
 }

@@ -1,0 +1,11 @@
+nav{
+    font-size: 22px;
+    line-height: 1.6;
+    ul{
+        display: flex;
+        flex-direction: row;
+        li{
+            list-style: none;
+        }
+    }
+}
