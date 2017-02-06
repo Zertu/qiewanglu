@@ -3,5 +3,5 @@
   <h3>{{poems.title}}</h3>
   <article [innerHTML]="poems.poem|addnewline">
   </article>
-  {{poems.author}} {{poems.updatetime}} {{poems.commits}} {{poems.viewnumber}}
+   <span class="stamp"> {{poems.updatetime}}  by{{poems.author}}  浏览({{poems.viewnumber}}) 留言({{poems.commits}})</span>
 </div>
