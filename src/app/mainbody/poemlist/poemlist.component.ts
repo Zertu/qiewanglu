@@ -5,15 +5,15 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-poemlist',
   templateUrl: './poemlist.component.html',
   styleUrls: ['./poemlist.component.scss'],
-  providers:[GetpoemsService]
+  providers: [GetpoemsService]
 })
 export class PoemlistComponent implements OnInit {
 
   constructor(
-    private GetpoemsService : GetpoemsService
+    private GetpoemsService: GetpoemsService
   ) { }
-
+  poemslist
   ngOnInit() {
+    console.log(this.poemslist = this.GetpoemsService.getpoemlist())
   }
-  poemslist=this.GetpoemsService.getpoemlist()
 }

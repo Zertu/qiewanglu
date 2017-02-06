@@ -1,9 +1,10 @@
+import { GetpoemsService } from './getpoems.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-mainbody',
   templateUrl: './mainbody.component.html',
-  styleUrls: ['./mainbody.component.css']
+  styleUrls: ['./mainbody.component.css'],
 })
 export class MainbodyComponent implements OnInit {
 
