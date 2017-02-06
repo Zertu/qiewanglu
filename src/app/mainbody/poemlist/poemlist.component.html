@@ -1,7 +1,11 @@
 <div *ngFor="let poems of poemslist">
   <img src="http://assets.awwwards.com/awards/images/2016/06/how-to-design-super-fast-website-big-image-.png" alt=""> 
-  <h3>{{poems.title}}</h3>
+  <h2>{{poems.title}}</h2>
   <article [innerHTML]="poems.poem|addnewline">
+<<<<<<< HEAD
+  </article>  
+=======
   </article>
+>>>>>>> refs/remotes/Zertu/master
    <span class="stamp"> {{poems.updatetime}}  by{{poems.author}}  浏览({{poems.viewnumber}}) 留言({{poems.commits}})</span>
 </div>
