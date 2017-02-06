@@ -2,9 +2,9 @@ import { Poemdata } from '../poemdata';
 export let POEMS: Poemdata[] = [
     {
         author: '3123',
+        cover: 'http://assets.awwwards.com/awards/images/2016/06/how-to-design-super-fast-website-big-image-.png',
         title: '半岛铁盒',
-        poem: `
-    走廊灯关上 书包放
+        poem: `    走廊灯关上 书包放
 　　走到房间窗外望
 　　回想刚买的书
 　　一本名叫半岛铁盒
@@ -40,8 +40,7 @@ export let POEMS: Poemdata[] = [
 　　铁盒的序变成了日记
 　　变成了空气 演化成回忆
 　　印象中的爱情好像顶不住那时间
-　　所以你弃权
-        `,
+　　所以你弃权        `,
         updatetime: '2017-06-06',
         commits: 1,
         viewnumber: 3,

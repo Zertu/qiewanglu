@@ -10,5 +10,4 @@ export class html2markdown implements PipeTransform, SafeHtml {
   transform(value: any, args?: any): SafeHtml {
     return markdown.toHTML(value)
   }
-
 }
