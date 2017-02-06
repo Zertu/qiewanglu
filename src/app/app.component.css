@@ -4,7 +4,7 @@
 }
 @font-face{
     font-family: fangzhengsongti;
-    src: url('方正清刻本悦宋简体.TTF')format('truetype');
+    src: url('font1.ttf')format('truetype');
 }
 *{
     font-family: font;
@@ -13,3 +13,11 @@
     color: #9aa3a4
 }
 
+.sidebar{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    display: block;
+    width: 200px;
+
+}
