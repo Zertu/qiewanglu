@@ -2,6 +2,6 @@
   <img [src]="poems.cover" /> 
   <h3>{{poems.title}}</h3>
   <article [innerHTML]="poems.poem|addnewline">
-  </article>
+  </article>  
    <span class="stamp"> {{poems.updatetime}}  by{{poems.author}}  浏览({{poems.viewnumber}}) 留言({{poems.commits}})</span>
 </div>
