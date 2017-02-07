@@ -1,0 +1,17 @@
+div {
+    width: 80%;
+    position: relative;
+    margin: 50px auto;
+    div {
+        font-family: fangzhenggufang;
+        position: relative;
+        margin: auto;
+        img {
+            position: absolute;
+            display: block;
+            width: 50px;
+            margin: auto;
+            top: 30px;
+        }
+    }
+}

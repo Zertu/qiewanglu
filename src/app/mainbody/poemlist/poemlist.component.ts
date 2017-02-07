@@ -14,7 +14,7 @@ export class PoemlistComponent implements OnInit,AfterViewInit {
   ) { }
   poemslist: Poemdata[]
   ngOnInit() {
-    this.poemslist = this.GetpoemsService.getpoemlist()
+    this.poemslist = this.GetpoemsService.getPoemlist()
   }
   ngAfterViewInit(){
 
