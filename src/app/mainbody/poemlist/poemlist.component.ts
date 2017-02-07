@@ -1,5 +1,6 @@
+import { Poemdata } from './../../poemdata';
 import { GetpoemsService } from './../getpoems.service';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild,AfterViewInit } from '@angular/core';
 
 @Component({
   selector: 'app-poemlist',
@@ -7,13 +8,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./poemlist.component.scss'],
   providers: [GetpoemsService]
 })
-export class PoemlistComponent implements OnInit {
-
+export class PoemlistComponent implements OnInit,AfterViewInit {
   constructor(
     private GetpoemsService: GetpoemsService
   ) { }
-  poemslist
+  poemslist: Poemdata[]
   ngOnInit() {
-    console.log(this.poemslist = this.GetpoemsService.getpoemlist())
+    this.poemslist = this.GetpoemsService.getpoemlist()
+  }
+  ngAfterViewInit(){
+
+  }
+  showall(){
+    console.log(this)
   }
 }
