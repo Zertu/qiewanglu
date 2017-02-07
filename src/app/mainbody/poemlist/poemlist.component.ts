@@ -19,7 +19,7 @@ export class PoemlistComponent implements OnInit,AfterViewInit {
   ngAfterViewInit(){
 
   }
-  showall(){
-    console.log(this)
+  showall(a){
+    console.log(a)
   }
 }
