@@ -6,6 +6,10 @@
     font-family: fangzhengsongti;
     src: url('font1.ttf')format('truetype');
 }
+@font-face{
+    font-family: fangzhenggufang;
+    src: url('font2.ttf')format('truetype');
+}
 *{
     font-family: font;
     margin: 0;

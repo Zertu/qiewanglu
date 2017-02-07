@@ -35,7 +35,9 @@ div {
         text-overflow: ellipsis;
         white-space: nowrap;
         &:after {
-            content: '';
+            content: '加载全部';
+            text-align: center;
+            font-family: fangzhenggufang;
             display: block;
             height: 30px;
             background: linear-gradient(transparent, white);
@@ -47,6 +49,7 @@ div {
         }
     }
     .stamp {
+        font-family: fangzhenggufang;
         color: #7F7F7F;
         font-size: 14px;
     }
