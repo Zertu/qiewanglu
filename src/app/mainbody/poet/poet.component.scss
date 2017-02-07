@@ -13,5 +13,24 @@ div {
             margin: auto;
             top: 30px;
         }
+        div{
+            padding: 15px;
+            position: absolute;
+            right: 30px;
+            height: 300px;
+            top: 20px;
+            background: white;
+            border-radius: 5%;
+            &:before{
+                content: '';
+                border-right: 15px solid white;
+                border-top: 15px solid transparent;
+                border-bottom: 15px solid transparent;
+                display: block;
+                position: absolute;
+                left: -15px;
+                top:25px;
+            }
+        }
     }
 }
