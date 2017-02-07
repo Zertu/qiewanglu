@@ -10,6 +10,7 @@ import { BroadcastComponent } from './broadcast/broadcast.component';
 import { MainbodyComponent } from './mainbody.component';
 // Angular Imports
 import { NgModule } from '@angular/core';
+import { ShowfullarticleDirective } from './showfullarticle.directive';
 
 @NgModule({
     imports: [
@@ -24,7 +25,8 @@ import { NgModule } from '@angular/core';
         EditorComponent,
         PoemComponent,
         PoemlistComponent,
-        PoetryComponent
+        PoetryComponent,
+        ShowfullarticleDirective
     ],
     exports: [
         MainbodyComponent,

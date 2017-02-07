@@ -16,6 +16,17 @@ div {
         margin-bottom: 10px;
         display: inline-block;
     }
+    .showall {
+        margin: auto;
+        padding: 0;
+        overflow-y: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        max-height:100% ;
+        &:after{
+            display: none;
+        }
+    }
     article {
         margin: auto;
         padding: 0;
@@ -23,20 +34,23 @@ div {
         max-height: 300px;
         text-overflow: ellipsis;
         white-space: nowrap;
-        &:after{
-            content: '';
+        &:after {
+            content: '加载全部';
+            text-align: center;
+            font-family: fangzhenggufang;
             display: block;
             height: 30px;
-            background: linear-gradient(transparent,white);
+            background: linear-gradient(transparent, white);
             position: absolute;
-            bottom:18px;
+            bottom: 18px;
             left: 0;
             width: 100%;
-            cursor:pointer;
+            cursor: pointer;
         }
     }
     .stamp {
-        color: 	#7F7F7F;
+        font-family: fangzhenggufang;
+        color: #7F7F7F;
         font-size: 14px;
     }
 }
