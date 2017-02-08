@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
 })
 export class EditorComponent  {
     constructor() { }
-    poem: string = ''
+    poet: string = ''
+    poettitle:string
 }
