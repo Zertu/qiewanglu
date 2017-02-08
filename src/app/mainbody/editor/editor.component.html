@@ -1,3 +1,10 @@
- <div  [innerHTML]= "poem|html2markdown">   
- </div>
- <textarea [(ngModel)]="poem" placeholder=""> </textarea>
+<div>
+  <div>
+    <span> {{poettitle}} </span>
+    <div [innerHTML]="poet|html2markdown">
+    </div>
+  </div>
+  <div><input type="text" [(ngModel)]="poettitle" placeholder="诗题">
+    <a class="uploadfile">点击上传封面<input type="file"></a></div>
+  <textarea [(ngModel)]="poet" placeholder=""> </textarea>
+</div>
