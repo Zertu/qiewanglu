@@ -1,7 +1,13 @@
 // component css goes here
+.loginbox{
+        width: 100%;
+        position: relative;
+}
 .Login {
+        position: fixed;
         margin-left:auto;
         margin-right:auto;
+        width:400px;
         max-width: 500px;
         background: #F7F7F7;
         padding: 25px 15px 25px 10px;
@@ -9,6 +15,9 @@
         color: #888;
         text-shadow: 1px 1px 1px #FFF;
         border:1px solid #E4E4E4;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 100;
 }
 
 .Login h1 {
@@ -41,7 +50,7 @@
         color: #888;
 }
 
-.Login input[type="text"], .Login input[type="email"]{
+.Login input[type="email"], .Login input[type="password"]{
         border: 1px solid #DADADA;
         color: #888;
         height: 30px;
@@ -70,4 +79,13 @@
 }
 .Login .button:hover {
         background: #CF7A7A
+}
+
+.menu{
+    position: absolute;
+    height:18px;
+    width:20px;
+    margin-left: -100px;
+    margin-top: -30px;
+    cursor: pointer;
 }
