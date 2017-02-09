@@ -1,8 +1,9 @@
 div {
-    width: 80%;
+    width: 90%;
     position: relative;
     margin: 50px auto;
     div {
+        width: 80%;
         font-family: fangzhenggufang;
         position: relative;
         margin: auto;
@@ -13,15 +14,14 @@ div {
             margin: auto;
             top: 30px;
         }
-        div{
-            padding: 15px;
+        div {
             position: absolute;
             right: 30px;
             height: 300px;
             top: 20px;
             background: white;
             border-radius: 5%;
-            &:before{
+            &:before {
                 content: '';
                 border-right: 15px solid white;
                 border-top: 15px solid transparent;
@@ -29,7 +29,22 @@ div {
                 display: block;
                 position: absolute;
                 left: -15px;
-                top:25px;
+                top: 25px;
+            }
+            div {
+                margin-left: 5%;
+                height: 0;
+                a {
+                    &:hover {
+                        color: black;
+                    }
+                    &:visited,
+                    &:link,
+                    &:active {
+                        color: #9aa3a4;
+                        text-decoration: none;
+                    }
+                }
             }
         }
     }

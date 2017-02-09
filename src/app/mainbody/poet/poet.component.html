@@ -1,7 +1,13 @@
 <div>
   <div *ngFor="let poet of Poets"><img [src]="poet.imghead" />
     <div>
-      {{poet.name}}{{poet.poetry}}{{poet.poemnumber}}{{poet.commits}}{{poet.viewnumber}}
+      <div>
+        <h2>用户名<a href="/poet?name={{poet.name}}">{{poet.name}}</a></h2>
+        <span>诗歌数<a href="/poet?name={{poet.name}}">{{poet.poemnumber}}</a></span>
+        <span>评论数<a href="/poet?name={{poet.name}}">{{poet.commits}}</a></span>
+        <span>他的诗集<a href="/poet?name={{poet.name}}">{{poet.poetry}}</a></span>
+        <span>浏览数<a href="/poet?name={{poet.name}}">{{poet.viewnumber}}</a></span>
+      </div>
     </div>
   </div>
 </div>
