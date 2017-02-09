@@ -1,5 +1,9 @@
 <div class="loginbox">
-    <div class="menu" (click)="isVisible = !isVisible"></div>
+    <ul class="menu" (click)="isVisible = !isVisible">
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
     <form class="login-form" (ngSubmit)="submitForm">
         <div class="Login" [style.display]="isVisible ? 'block' : 'none'">
         <h1>登录
