@@ -4,22 +4,26 @@
         <li></li>
         <li></li>
     </ul>
-    <form class="login-form" (ngSubmit)="submitForm">
+    <form class="login-form" (ngSubmit)="login()">
         <div class="Login" [style.display]="isVisible ? 'block' : 'none'">
         <h1>登录
             <span>获取更多服务.</span>
         </h1>
-        <label>
-            <span>邮箱 :</span>
-            <input id="email" required type="email" name="email" placeholder="e-Mail" [(ngModel)]="user.email" />
-        </label>
-        <label>
-            <span>密码 :</span>
-            <input id="password" required type="password" name="password" placeholder="Password" [(ngModel)]="user.password" />
-        </label>
+        <div class="form-group">
+            <label for="email">
+                <span>邮箱 :</span>
+                <input id="email" class="form-control" required type="email" name="email" placeholder="e-Mail" [(ngModel)]="user.email" />
+            </label>
+        </div>
+        <div class="form-group">
+            <label for="password" >
+                <span>密码 :</span>
+                <input id="password" class="form-control" required type="password" name="password" placeholder="Password" [(ngModel)]="user.password" />
+            </label>
+        </div>
         <label>
             <span>&nbsp;</span>
-            <input class="button" value="Login" type="submit" (click)="login()" />
+            <input class="button" value="Login" type="submit"/>
         </label>
         </div>
         </form>
