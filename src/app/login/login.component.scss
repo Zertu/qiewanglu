@@ -7,6 +7,9 @@
         cursor: pointer;
         display: flex;
         flex-direction: column;
+        height: 22px;
+        width:22px;
+        z-index: 10;
         li {
             margin-top: 2px;
             border: 3px solid #B6B6B6;
@@ -62,6 +65,8 @@
     }
 }
 
+
+
 .Login input[type="email"],
 .Login input[type="password"] {
     border: 1px solid #DADADA;
@@ -92,4 +97,12 @@
     &:hover {
         background: #CF7A7A
     }
+}
+
+.ng-valid[required], .ng-valid.required  {
+    border-left: 5px solid #42A948 !important ;/* green */
+}
+
+.ng-invalid:not(form)  {
+    border-left: 5px solid #a94442 !important ; /* red */
 }
