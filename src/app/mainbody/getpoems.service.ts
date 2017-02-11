@@ -1,3 +1,4 @@
+import { potery } from './../potery';
 import { Poet } from './../poet';
 import { POEMS } from './poems';
 import { Poemdata } from '../poemdata';
@@ -21,5 +22,8 @@ export class GetpoemsService {
             commits: 2,
             viewnumber: 3
         }]
+    }
+    getPoterys():potery[]{
+        return []
     }
 }
